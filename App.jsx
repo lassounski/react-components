@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="flex justify-center items-center gap-6 flex-col mx-auto w-10/12 my-10">
 
-      <p className="text-8xl">Badges</p>
+      <p className="text-6xl m-4">Badges</p>
       <div className="flex flex-col justify-between gap-6 md:flex-wrap md:flex-row">
         <Badge color="red" shape="pill">Badge</Badge>
         <Badge color="blue" shape="square">Badge</Badge>
@@ -20,7 +20,7 @@ function App() {
         <Badge color="pink" shape="pill">Badge</Badge>
       </div>
 
-      <p className="text-8xl">Banners</p>
+      <p className="text-6xl m-4">Banners</p>
       <div className="flex flex-col justify-center gap-6 md:flex-wrap md:flex-row">
         <Banner type="error" >Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner type="neutral" title="Check this out">Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
@@ -33,7 +33,7 @@ function App() {
         <Banner type="waring">Its a problem</Banner>
       </div>
 
-      <p className="text-8xl mb-10">Cards</p>
+      <p className="text-6xl m-4">Cards</p>
       <div className="flex flex-col justify-center gap-6 ">
         <Card title="Reverence for Life" icon={<PiFlowerLotusThin className="bg-purple-500"/>}>
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
