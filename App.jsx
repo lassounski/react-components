@@ -25,13 +25,13 @@ function App() {
       <div className="flex flex-col justify-center gap-6 md:flex-wrap md:flex-row">
         <Banner type="error" >Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner type="neutral" title="Check this out">Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
+        <Banner />
         <Banner type="warning" >Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner type="success" >Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner>Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner type="success" ></Banner>
         <Banner type="error" title="Ops"></Banner>
-        {/* <Banner type="waring" ></Banner> */}
-        <Banner />
+        <Banner type="waring">Its a problem</Banner>
       </div>
     </div>
   )

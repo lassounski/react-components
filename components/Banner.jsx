@@ -37,8 +37,8 @@ export default function Banner({ children,
     const colorResult = (badgeProperties[typeNormalized] || badgeProperties['neutral']).color;
     const iconResult = (badgeProperties[typeNormalized] || badgeProperties['neutral']).icon;
     const titleResult = title ? title : badgeProperties[typeNormalized].title;
-    const classesResult = classNames(badgeDefaults, colorResult, shapeResult)
-    
+    const classesResult = classNames(badgeDefaults, colorResult, shapeResult, rest.className)
+    console.log(classesResult)
     return (
         <div className={`flex gap-3 ${classesResult}`}>
             <div>

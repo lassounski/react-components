@@ -19,9 +19,9 @@ export default function Badge({ children, color, shape, ...rest }) {
     const colorResult = colorMap[color] || ''
 
 
-    const classes = classNames(badgeBasicStyle, colorResult, shapeResult)
+    const classes = classNames(badgeBasicStyle, colorResult, shapeResult, rest.className)
     return (
-        <div className={classes} {...rest}>
+        <div className={classes}>
             {children}
         </div>
     )
