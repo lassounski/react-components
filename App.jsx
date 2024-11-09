@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Menu from "./components/Menu/index"
-import Star from "./components/Star"
-import Button from './components/Button/Button';
+import { PiFlowerLotusThin } from "react-icons/pi";
 import Badge from './components/Badge';
 import Banner from './components/Banner';
+import Card from './components/Card';
 import './style.css'
 
 function App() {
@@ -32,6 +31,16 @@ function App() {
         <Banner type="success" ></Banner>
         <Banner type="error" title="Ops"></Banner>
         <Banner type="waring">Its a problem</Banner>
+      </div>
+
+      <p className="text-8xl mb-10">Cards</p>
+      <div className="flex flex-col justify-center gap-6 ">
+        <Card title="Reverence for Life" icon={<PiFlowerLotusThin className="bg-purple-500"/>}>
+          Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
+        </Card>
+        <Card className="mt-10" >
+          No mud, no lotus
+        </Card>
       </div>
     </div>
   )

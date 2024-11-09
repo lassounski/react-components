@@ -6,7 +6,11 @@ module.exports = {
     "./hooks/**/*.{js,jsx}",       // Include all files in the hooks directory
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        inherit: 'inherit', // Allow "inherit" for background color
+      },
+    },
   },
   plugins: [],
 }
