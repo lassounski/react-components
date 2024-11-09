@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./**/*.{js,jsx,ts,tsx}",
+    "./App.jsx",           // Include your root App component
+    "./components/**/*.{js,jsx}",  // Include all files in the components directory
+    "./hooks/**/*.{js,jsx}",       // Include all files in the hooks directory
   ],
   theme: {
     extend: {},
