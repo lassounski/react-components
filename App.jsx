@@ -4,6 +4,7 @@ import { PiFlowerLotusThin } from "react-icons/pi";
 import Badge from './components/Badge';
 import Banner from './components/Banner';
 import Card from './components/Card';
+import Testimonial from './components/Testimonial';
 import './style.css'
 
 function App() {
@@ -41,6 +42,16 @@ function App() {
         <Card className="mt-10" >
           No mud, no lotus
         </Card>
+      </div>
+
+      <p className="text-6xl m-4">Testimonials</p>
+      <div className="flex flex-col justify-center gap-6 ">
+        <Testimonial picture={<img src="/kirill.png" alt="Kirill Lassounski"/>}  author="Kirill Lassounski" title="FreelanceGuru, Founder">
+          Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
+        </Testimonial>
+        <Testimonial>
+          Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
+        </Testimonial>
       </div>
     </div>
   )
