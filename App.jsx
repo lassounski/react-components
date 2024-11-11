@@ -5,6 +5,7 @@ import Badge from './components/Badge';
 import Banner from './components/Banner';
 import Card from './components/Card';
 import Testimonial from './components/Testimonial';
+import Tooltip from './components/Tooltip';
 import './style.css'
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
 
       <p className="text-6xl m-4">Cards</p>
       <div className="flex flex-col justify-center gap-6 ">
-        <Card title="Reverence for Life" icon={<PiFlowerLotusThin className="bg-purple-500"/>}>
+        <Card title="Reverence for Life" icon={<PiFlowerLotusThin className="bg-purple-500" />}>
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
         </Card>
         <Card className="mt-10" >
@@ -46,12 +47,26 @@ function App() {
 
       <p className="text-6xl m-4">Testimonials</p>
       <div className="flex flex-col justify-center gap-6 ">
-        <Testimonial picture={<img src="/kirill.png" alt="Kirill Lassounski"/>}  author="Kirill Lassounski" title="FreelanceGuru, Founder">
+        <Testimonial picture={<img src="/kirill.png" alt="Kirill Lassounski" />} author="Kirill Lassounski" title="FreelanceGuru, Founder">
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
         </Testimonial>
         <Testimonial>
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
         </Testimonial>
+      </div>
+
+
+      <p className="text-6xl m-4">Testimonials</p>
+      <div className="flex flex-col justify-center gap-6 ">
+        <Tooltip title="Daily Dharma">Aware of the suffering caused by the destruction of life.</Tooltip>
+        <Tooltip title="Daily Dharma" color="pink">Aware of the suffering caused by the destruction of life.</Tooltip>
+        <Tooltip title="Daily Dharma" style="bold">Aware of the suffering caused by the destruction of life.</Tooltip>
+        <Tooltip title="Daily Dharma" color="blue" style="bold">Aware of the suffering caused by the destruction of life.</Tooltip>
+        <Tooltip
+          title="Daily Dharma"
+          color="green"
+          style="light"
+          closeCallback={() => console.log('green button closed!')}>Aware of the suffering caused by the destruction of life.</Tooltip>
       </div>
     </div>
   )
