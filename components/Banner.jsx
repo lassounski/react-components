@@ -22,12 +22,12 @@ export default function Banner({ children,
         neutral: {
             color: 'text-blue-700 bg-blue-100',
             title: 'Update available',
-            icon: <FaCheckCircle className='text-2xl' />
+            icon: <FaInfoCircle className='text-2xl' />
         },
         success: {
             color: 'text-green-700 bg-green-100',
             title: 'Congratulations!',
-            icon: <FaInfoCircle className='text-2xl' />
+            icon: <FaCheckCircle className='text-2xl' />
         },
     }
     const typeNormalized = badgeProperties.hasOwnProperty(type) ? type : 'neutral'
