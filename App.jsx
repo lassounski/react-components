@@ -25,7 +25,8 @@ function App() {
   return (
     <div id="main" className="flex justify-center items-center gap-6 flex-col mx-auto w-10/12 my-10 relative">
 
-      <p className="text-6xl m-4">Badges</p>
+      <p className="text-6xl m-2">Badges</p>
+      <p className="text-md m-1">Tiny colored badges with text.</p>
       <div className="flex flex-col justify-between gap-6 md:flex-wrap md:flex-row">
         <Badge color="red" shape="pill">Badge</Badge>
         <Badge color="blue" shape="square">Badge</Badge>
@@ -35,7 +36,8 @@ function App() {
         <Badge color="pink" shape="pill">Badge</Badge>
       </div>
 
-      <p className="text-6xl m-4">Banners</p>
+      <p className="text-6xl m-2">Banners</p>
+      <p className="text-md m-1">Large boxes with content or without. Changing shape.</p>
       <div className="flex flex-col justify-center gap-6 md:flex-wrap md:flex-row">
         <Banner type="error" >Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
         <Banner type="neutral" title="Check this out">Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.</Banner>
@@ -48,7 +50,8 @@ function App() {
         <Banner type="waring">Its a problem</Banner>
       </div>
 
-      <p className="text-6xl m-4">Cards</p>
+      <p className="text-6xl m-2">Cards</p>
+      <p className="text-md m-1 mb-8">Cards with title, text, icon (optional - default available)</p>
       <div className="flex flex-col justify-center gap-6 ">
         <Card title="Reverence for Life" icon={<PiFlowerLotusThin className="bg-purple-500" />}>
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
@@ -58,7 +61,9 @@ function App() {
         </Card>
       </div>
 
-      <p className="text-6xl m-4">Testimonials</p>
+      <p className="text-6xl m-2">Testimonials</p>
+      <p className="text-md m-2">Mobile first, adjust on resize, image (optional)
+      </p>
       <div className="flex flex-col justify-center gap-6 ">
         <Testimonial picture={<img src="/kirill.png" alt="Kirill Lassounski" />} author="Kirill Lassounski" title="FreelanceGuru, Founder">
           Aware of the suffering caused by the destruction of life, I am committed to cultivating the insight of interbeing and compassion and learning ways to protect the lives of people, animals, plants, and minerals.
@@ -70,6 +75,7 @@ function App() {
 
 
       <p className="text-6xl m-4">Tooltips</p>
+      <p className="text-md m-2">You can close them</p>
       <div className="flex flex-col justify-center gap-6 ">
         <Tooltip title="Daily Dharma">Aware of the suffering caused by the destruction of life.</Tooltip>
         <Tooltip title="Daily Dharma" color="pink">Aware of the suffering caused by the destruction of life.</Tooltip>
@@ -83,6 +89,7 @@ function App() {
       </div>
 
       <p className="text-6xl m-4">Toast Popups</p>
+      <p className="text-md m-2">Click a few buttons</p>
       <div className="flex flex-col md:flex-row justify-center gap-6 ">
         <button
           onClick={() => handleAddPopup('success')}
